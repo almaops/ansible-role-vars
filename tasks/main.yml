@@ -1,0 +1,6 @@
+---
+- name: "include variables from directory: {{ var_loader_src }}"
+  include_vars:
+    dir: "{{ var_loader_src }}"
+    ignore_unknown_extensions: true
+...
