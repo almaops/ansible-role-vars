@@ -1,6 +1,6 @@
 ---
-- name: "include variables from directory: {{ var_loader_src }}"
+- name: "{{ vars_task_prefix }} from {{ vars_source }}"
   include_vars:
-    dir: "{{ var_loader_src }}"
+    dir: "{{ vars_source }}"
     ignore_unknown_extensions: true
 ...
